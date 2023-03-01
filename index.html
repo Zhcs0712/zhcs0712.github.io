@@ -1,7 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" id="theme-light-mode">
+<head>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Lhcfl">
+    <title>Zhcs0712 Home</title>
+    <meta name="description" content="欢迎来到Chelationland!">
+    <meta name="keywords" content="Blog,博客,Hexo">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blog_basic.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/insight.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+    <script src="/js/jquery.js"></script><meta name="generator" content="Hexo 6.2.0">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="page-top animated fadeInDown">
+        <div class="nav">
+            <li>
+                <a class="current" href="/">首页</a>
+            </li>
+            <li>
+                <a href="/archives">归档</a>
+            </li>
+            <li>
+                <a href="/tags">标签</a>
+            </li>
+            <li>
+                <a href="/about">关于</a>
+            </li>
+            <li>
+                <a href="/links">友链</a>
+            </li>
+        </div>
+        <div class="information">
+            <div class="nav_right_btn">
+                <li>
+                    <a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a>
+                </li>
+                <li>
+                    <a class="fa fa-search" onclick="openWindow();"></a>
+                </li>
+                <li>
+                    <a class="fa fa-sun-o" onclick="darkLightToggle();"></a>
+                </li>
+            </div>
+            <div class="avatar">
+                <img src="/images/logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="sidebar animated fadeInDown">
+        <div class="sidebar-top">
+            <div class="logo-title">
+                <div class="title">
+                    <img src="/images/logo.png" style="width:250px;" alt="favicon">
+                    <h3 title="">
+                        <a href="/">Lhc_fl Home</a>
+                    </h3>
+                    <div class="description">
+                        <p>欢迎来到Chelationland!</p>
+                    </div>
+                </div>
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/Lhcfl">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:lhcfl@outlook.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY=2535637911">
+                            <i class="fa fa-qq"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://zhihu.com/people/jin-xin-4-68">
+                            <i class="fa fa-mortar-board"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://twitter.com/lhc_fl">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="p"> <span> 如未声明则为CC-BY-SA-3.0 </span>
+                <i class="fa fa-star"></i><span> Lhcfl</span>
+            </div>
+            <div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><span>Anatolo </span></div>
+            <div class="beian"></div>
+        </div>
+    </div>
+        <div class="main">
+            <div class="autopagerize_page_element">
+                <div class="content">
+                    <div class="post animated fadeInDown">
+                        <div class="post-title">
+                            <h3><a href="/2022/11/25/Discourse%E5%90%8C%E6%AD%A5%E8%84%9A%E6%9C%AC%E5%81%9A%E5%A5%BD%E8%BE%A3%EF%BC%81/">Discourse同步脚本做好辣！</a></h3>
+                        </div>
+                        <div class="post-content">
+                            <div class="card">
+                                <p><p>项目地址： <a target="_blank" rel="noopener" href="https://github.com/Lhcfl/discourse-auto-upload">https://github.com/Lhcfl/discourse-auto-upload</a></p>
+                                <p>大概就是这么一个很简单的上传脚本。</p>
+                                <p>实现的功能，大概还只有把markdown和纯文本自动上传和同步到discourse论坛上吧。</p>
+                                <p>config.yml应该很好读，嗯。</p></p>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="meta">
+                                <div class="info">
+                                    <i class="fa fa-sun-o"></i><span class="date">2022-11-25</span>
+                                    <i class="fa fa-tag"></i><a class="tag" href="/tags/Ruby/" title="Ruby">Ruby </a>
+                                    <i class="fa fa-tag"></i><a class="tag" href="/tags/脚本/" title="脚本">脚本 </a>
+                                    <i class="fa fa-tag"></i><a class="tag" href="/tags/Discourse/" title="Discourse">Discourse </a><span class="leancloud_visitors"></span><span>大约70个字, 14秒读完</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post animated fadeInDown">
+                        <div class="post-title">
+                            <h3><a href="/2022/11/25/%E5%86%8D%E6%AC%A1%E7%A2%8E%E7%A2%8E%E5%BF%B5/">再次碎碎念</a></h3>
+                        </div>
+                        <div class="post-content">
+                            <div class="card"><p><p>很久没有来更新blog了耶。</p>
+                                <p>刚刚发现自己的blog被 <a target="_blank" rel="noopener" href="https://mtf.lgbt/%E8%B7%A8%E6%80%A7%E5%88%AB%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E6%9D%A5%E6%BA%90%E6%B1%87%E6%80%BB/">某站</a> 收录了。啊这。</p>
+                                <p>如果你是从这个站来的……多少要失望了？（笑</p></p>
+                            </div>
+                        </div>
+                        <div class="post-footer">
+                            <div class="meta">
+                                <div class="info"><i class="fa fa-sun-o"></i><span class="date">2022-11-25</span><i class="fa fa-tag"></i>
+                                    <a class="tag" href="/tags/无聊/" title="无聊">无聊 </a>
+                                    <i class="fa fa-tag"></i>
+                                    <a class="tag" href="/tags/碎碎念/" title="碎碎念">碎碎念 </a>
+                                    <span class="leancloud_visitors"></span><span>大约96个字, 19秒读完</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul class="clearfix">
+                            <li class="next pagbuttons"><a class="btn" role="navigation" href="/page/2/">下一页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/darkLightToggle.js"></script>
+        <script src="/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="/js/jquery.appear.js"></script>
+        <script src="/js/add-bookmark.js"></script>
+        <script>(function(window){var INSIGHT_CONFIG={TRANSLATION:{POSTS:"文章",PAGES:"页面",CATEGORIES:"分类",TAGS:"标签",UNTITLED:"(无标题)",},CONTENT_URL:"/content.json",};window.INSIGHT_CONFIG=INSIGHT_CONFIG})(window);</script>
+        <script src="/js/insight.js" defer></script>
+        <div class="searchbox ins-search">
+            <div class="searchbox-container ins-search-container">
+                <div class="searchbox-input-wrapper">
+                    <input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="closeWindow();"></a></span>
+                </div>
+                <div class="searchbox-result-wrapper ins-section-wrapper">
+                    <div class="ins-section-container"><p>Seraching...</p></div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
