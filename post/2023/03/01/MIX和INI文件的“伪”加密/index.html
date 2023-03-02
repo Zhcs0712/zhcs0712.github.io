@@ -110,9 +110,7 @@
                                     </pre>
                                 </td>
                                 <td class="code">
-                                    <pre>
-                                        <span class="line">with <span class="keyword">open</span> (<span class="string">'rules_temp.ini'</span>, <span class="keyword">'rb'</span>) as f:</span><br><span class="line">    <span>data = f.</span><span class="keyword">read</span>()</span><br><span class="line">    <span>hex_data = </span><span class="string">'fffe000a' + data.</span><span class="keyword">hex()</span></span><br><span class="line">    <span>data = bytes.</span><span class="keyword">fromhex(</span>hex_data<span class="keyword">)</span></span><br><span class="line">with <span class="keyword">open</span> (<span class="string">'temp.ini'</span>, <span class="keyword">'wb'</span>) as f:</span><br><span class="line">    <span>r.</span><span class="keyword">write</span>(data)</span>
-                                    </pre>
+                                    <pre><span class="line">with <span class="keyword">open</span> (<span class="string">'rules_temp.ini'</span>, <span class="keyword">'rb'</span>) as f:</span><br><span class="line">    <span>data = f.</span><span class="keyword">read</span>()</span><br><span class="line">    <span>hex_data = </span><span class="string">'fffe000a' + data.</span><span class="keyword">hex()</span></span><br><span class="line">    <span>data = bytes.</span><span class="keyword">fromhex(</span>hex_data<span class="keyword">)</span></span><br><span class="line">with <span class="keyword">open</span> (<span class="string">'temp.ini'</span>, <span class="keyword">'wb'</span>) as f:</span><br><span class="line">    <span>r.</span><span class="keyword">write</span>(data)</span></pre>
                                 </td>
                             </tr>
                         </table>
@@ -120,6 +118,27 @@
                         </p>
                         <br>
                         <p>对于.ini文件：</p>
+                        <p>
+                            <figure class="highlight c++">
+                            <table>
+                                <tr>
+                                    <td class="gutter">
+                                        <pre>
+                                            <span class="line">1</span><br>
+                                            <span class="line">2</span><br>
+                                            <span class="line">3</span><br>
+                                            <span class="line">4</span><br>
+                                            <span class="line">5</span><br>
+                                            <span class="line">6</span><br>
+                                        </pre>
+                                    </td>
+                                    <td class="code">
+                                        <pre><span class="line">with <span class="keyword">open</span> (<span class="string">'expand.mix'</span>, <span class="keyword">'rb'</span>) as f:</span><br><span class="line">    <span>data = f.</span><span class="keyword">read</span>()</span><br><span class="line">    <span>hex_data = </span>data.<span class="keyword">hex()</span> + <span class="string">'fffe'</span></span><br><span class="line">    <span>data = bytes.</span><span class="keyword">fromhex(</span>hex_data<span class="keyword">)</span></span><br><span class="line">with <span class="keyword">open</span> (<span class="string">'temp.mix'</span>, <span class="keyword">'wb'</span>) as f:</span><br><span class="line">    <span>r.</span><span class="keyword">write</span>(data)</span></pre>
+                                    </td>
+                                </tr>
+                            </table>
+                            </figure>
+                            </p>
                         <div class="tip">本文采用CC-BY-SA-3.0协议，转载请注明出处<br>作者: Zhcs0712</div>
                     </div>
                     <div class="post-footer">
